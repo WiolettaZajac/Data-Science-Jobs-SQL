@@ -138,7 +138,8 @@ This project helped me improve my understanding of SQL and relational database d
 
 ## Conclusion
 
-This project provided valuable experience in working with a real-world dataset using MySQL. It strengthened my understanding of database design, data cleaning and SQL querying. Creating a relational database and analysing the data helped me develop practical skills that I can apply to future data analysis projects.
+This project helped me gain practical experience using MySQL with a real-world dataset. 
+It improved my understanding of database design, data cleaning and SQL queries. I also became more confident in analysing data using SQL.
 
 ## Source
 
