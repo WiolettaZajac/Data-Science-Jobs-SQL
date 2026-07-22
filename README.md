@@ -49,6 +49,7 @@ The project uses a simple relational database consisting of three tables: **Comp
 
 ![Database Schema](Screenshots/SCHEMA-pic.png)
 
+
 ## Example SQL Query
 
 The following query returns the number of job vacancies advertised by each company.
