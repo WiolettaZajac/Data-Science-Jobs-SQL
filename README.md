@@ -27,6 +27,7 @@ To improve the database structure, the original dataset was divided into three r
 
 This design reduces duplicated data and demonstrates the use of primary and foreign keys.
 
+
 ## Table Creation
 
 The following SQL statement was used to create the `clean_jobs` table.
@@ -34,6 +35,8 @@ The following SQL statement was used to create the `clean_jobs` table.
 ```CREATE TABLE clean_jobs AS
 SELECT *
 FROM data_science_jobs;```
+
+
 
 ## Database Schema
 
