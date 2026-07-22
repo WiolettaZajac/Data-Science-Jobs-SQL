@@ -49,48 +49,44 @@ The project uses a simple relational database consisting of three tables: **Comp
 
 ![Database Schema](Screenshots/schema.png.png)
 
+
+
 ## Example SQL Query
 
-The following query returns the number of job vacancies advertised by each company.
+The following query calculates the average company rating.
 
 ```sql
-SELECT CompanyName,
-       COUNT(*) AS TotalJobs
-FROM Jobs j
-JOIN Companies c
-ON j.CompanyID = c.CompanyID
-GROUP BY CompanyName
-ORDER BY TotalJobs DESC;
+SELECT ROUND(AVG(rating),2) AS AverageRating
+FROM clean_jobs;
 ```
 
 ## Example SQL Query
 
-The following query shows the number of vacancies for each employment type.
+The following query shows the companies with more than three job vacancies.
 
 ```sql
-SELECT JobTypeName,
-       COUNT(*) AS TotalJobs
-FROM Jobs j
-JOIN JobTypes jt
-ON j.JobTypeID = jt.JobTypeID
-GROUP BY JobTypeName
-ORDER BY TotalJobs DESC;
+SELECT company,
+       COUNT(*) AS Jobs
+FROM clean_jobs
+GROUP BY company
+HAVING COUNT(*) > 3
+ORDER BY Jobs DESC;
 ```
 
 ## Example SQL Query
 
-The following query combines all three tables to display the job title, company and employment type.
+The following query creates a view containing companies with a rating of 4.5 or higher.
 
 ```sql
-SELECT j.PositionName,
-       c.CompanyName,
-       jt.JobTypeName
-FROM Jobs j
-JOIN Companies c
-ON j.CompanyID = c.CompanyID
-JOIN JobTypes jt
-ON j.JobTypeID = jt.JobTypeID;
+CREATE VIEW High_Rated_Companies AS
+SELECT *
+FROM clean_jobs
+WHERE rating >= 4.5;
+
+SELECT *
+FROM High_Rated_Companies;
 ```
+
 
 ## Data Cleaning
 
