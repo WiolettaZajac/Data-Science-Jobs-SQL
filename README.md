@@ -98,8 +98,8 @@ Before analysing the data, several cleaning steps were completed:
 
 - Checked for missing values.
 - Investigated duplicate records.
-- Replaced missing job types with **'Unknown'** where appropriate.
 - Retained missing salary values because many job adverts did not include salary information.
+- Checked for possible duplicate records. They were kept because they may represent different job adverts for the same role.
 
 ## SQL Skills Used
 
