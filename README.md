@@ -29,19 +29,11 @@ This design reduces duplicated data and demonstrates the use of primary and fore
 
 ## Table Creation
 
-The following SQL statement was used to create the `Jobs` table.
+The following SQL statement was used to create the `clean_jobs` table.
 
-```sql
-CREATE TABLE Jobs (
-    JobID INT AUTO_INCREMENT PRIMARY KEY,
-    PositionName VARCHAR(255),
-    Salary VARCHAR(100),
-    CompanyID INT,
-    JobTypeID INT,
-    FOREIGN KEY (CompanyID) REFERENCES Companies(CompanyID),
-    FOREIGN KEY (JobTypeID) REFERENCES JobTypes(JobTypeID)
-);
-```
+```CREATE TABLE clean_jobs AS
+SELECT *
+FROM data_science_jobs;```
 
 ## Database Schema
 
