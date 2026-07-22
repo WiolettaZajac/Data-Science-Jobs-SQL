@@ -32,15 +32,15 @@ This design reduces duplicated data and demonstrates the use of primary and fore
 
 The following SQL statement was used to create the `clean_jobs` table.
 
-```CREATE TABLE clean_jobs AS
+```sql
+CREATE TABLE clean_jobs AS
 SELECT *
-FROM data_science_jobs;```
-
-
+FROM data_science_jobs;
+```
 
 ## Database Schema
 
-The project uses a simple relational database consisting of three tables: **Companies**, **Jobs**, and **JobTypes**. The tables are connected using foreign key relationships, allowing information to be retrieved using SQL joins.
+The project uses a simple relational database consisting of three tables: **Companies**, **Jobs**, and **JobTypes**. The tables are connected using primary and foreign keys to reduce duplicated data.
 
 ![Database Schema](Screenshots/schema.png.png)
 
