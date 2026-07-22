@@ -47,7 +47,7 @@ CREATE TABLE Jobs (
 
 The project uses a simple relational database consisting of three tables: **Companies**, **Jobs**, and **JobTypes**. The tables are connected using foreign key relationships, allowing information to be retrieved using SQL joins.
 
-![Database Schema](Screenshots/SCHEMA - pic.png)
+![Database Schema](Screenshots/schema.png.png)
 
 ## Example SQL Query
 
