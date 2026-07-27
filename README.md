@@ -31,7 +31,7 @@ Instead of working with one large table, I split the data into three related tab
 
 This reduced duplicated data and allowed me to practise using primary and foreign keys.
 
-![Database Schema](Screenshots/schema.png)
+![Database Schema](Screenshots/schema2.png)
 
 ---
 
